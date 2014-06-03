@@ -1,276 +1,243 @@
 /*  
-
-Theme Name: Yalewoo
-
+Theme Name: yale
 Theme URI: http://www.yalewoo.com
-
 Description: This is my theme as a new test.
-
-Version: 0.1
-
+Version: 1.0
 Author: Yalewoo
-
 Author URI: http://www.yalewoo.com/
-
-
 */
-body, h1, h2, h3, h4, h5, h6, blockquote, p, form{
-    margin: 0;
-    padding: 0;
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 
-body{
-    margin: 10px;
-    font-family: Arial, Helvetica, Georgia, Sans-serif;
-    text-align: center;
-    vertical-align: top;
-    background: url('thumb/bg.png') repeat scroll 0% 0% transparent;
-    color: #000000;
+body {
+	background: url('img/bg.png') repeat scroll 0% 0% transparent;
+}
+h1, h2, h3, h4, h5 {
+	font-weight: bold;
+}
+p {
+	text-indent: 2em;
+}
+/*=a*/
+a {
+	color: #336699;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
 }
 
-h1{
-    font-family: Georgia, Sans-serif;
-    font-size: 24px;
-    padding: 0 0 10px 0;
+/*=header*/
+header {
+	margin: 10px;
+	float: left;
+	width: 98%;
+	text-align: center;
+}
+header h1 {
+	font-size: 30px;
+	margin-top: 0;
+}
+header hgroup {
+	float: left;
+}
+header div {
+	float: left;
+	height: 28px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-bottom: 3px solid #e10001;	
 }
 
-a:link, a:visited{
-    text-decoration: none;
-    color: #336699;
+header div ul li {
+	float: left;
+	margin-left: 2px;
 }
-a:hover{
-    text-decoration: underline;
-    color: #ff0000;
+header div ul li a {
+	color: black;
+	display: block;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	font-size: 14px;
+	width: 87px;
+	background: url('img/nav_bg.gif') 0 -28px no-repeat;
 }
-
-p{
-    padding: 10px 0 0 0;
-    text-indent: 2em;
-}
-
-#wrapper{
-    margin: 0 auto 0 auto;
-    width: 100%;
-    text-align: left;
-}
-
-#header{
-    float: left;
-    width: 100%;
-    border-bottom-style:solid;
-    border-color: orange;
-    margin: 0 0 10px 0;
-    text-align: center;
+header div ul li a:hover {
+	background: url('img/nav_bg.gif') 0 -56px no-repeat;
+	color: red;
 }
 
-#container{
-    float: left;
-    width: 65%;
-    margin: 0 0 0 2%;
-    font-size: 16px;
+header ul .current-menu-item a ,header ul .current-menu-item a:hover {
+	background: url('img/nav_bg.gif') 0 0px no-repeat;
+	color: white;
+}
+header ul li ul {
+	display: none;
+	position: absolute;
+	border: 1px solid #ccc;
+}
+header ul li ul li {
+	float: none;
+	width: 87px;
+	background: #eee;
+	margin: 0;
+}
+header ul li ul li a {
+	background: none;
 }
 
-.post{
-    padding: 10px 0 10px 0;
-}
-.post h2{
-    font-family: 微软雅黑, 黑体, Georgia, Sans-serif;
-    font-size: 30px;
-    text-align: center;
+header ul li:hover ul{
+	display: block;
 }
 
-.entry{
-    line-height: 1.5;
-    margin: 0 10px 0 10px;
+/*=container*/
+#container {
+	margin-left: 2%;
+	float: left;
+	width: 64%;
+}
+.post1 {
+	background: none repeat scroll 0% 0% #fff;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+.entry-thumb {
+	border: 1px solid #d1d1d1;
+	padding: 4px;
+	float: left;
+	height: 154px;
+}
+.entry-thumb img {
+	width: 180px;
+	height: 150px;
+}
+.entry-content a {
+	display: block;
+	float: right;
+}
+.rightpost {
+	margin-left: 200px;
+	float: right;
+	margin-top: -163px;
+}
+.rightpost h2 {
+	margin-left: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	font-size:20px;	
+	border-bottom:2px solid #BFBFBF;
+	text-shadow:2px 2px 5px orange,-2px 2px 5px yellow; 
+}
+.rightpost h2 a:hover {
+	color: red;
+}
+.entry-meta {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+.rightpost p {
+	line-height: 1.2;
 }
 
-p.postmetadata{
+
+/*=aside*/
+aside {
+	padding: 0 0 0 10px;
+	float: right;
+	width: 29%;
+	background: white;
+	margin-right: 2%;
+}
+aside li h2 {
+	font-size: 18px;
+	margin: 5px;
+	color: #ff461f;
+}
+aside li {
+	line-height: 1.2;
+	margin-left: 3px;
+}
+
+/*=footer*/
+footer {
+	clear: both;
+	text-align: center;
+}
+
+/*=single*/
+.entry {
+	line-height: 1.5;
+	margin-left: 3%;
+}
+.post h2 {
+	font-size: 30px;
+	font-family: 微软雅黑;
+	text-align: center;
+	margin: 10px 0;
+}
+.postmetadata {
     border-top: 1px solid #ccc;
     margin: 10px 0 0 0;
+}
+.postcopyright {
+	border-bottom: 1px solid #ccc;
+}
+.strong {
+	font-weight: bold;
 }
 .navigation{
     padding: 10px 0 0 0;
     font-size: 14px;
     font-weight: bold;
-}
-
-.sidebar{
-    float: right;
-    width: 30%;
-    background: none repeat scroll 0% 0% #FFF;
-    margin: 0 0 0 10px;
-    display: inline;
-}
-.sidebar ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0 10px 0 10px;
-}
-.sidebar ul li{
-    padding: 10px 0 10px 0;
-}
-.sidebar ul li h2{
-    font-family: Georgia, Sans-serif;
-    font-size: 14px;
-}
-.sidebar ul ul li{
-    padding: 0;
-}
-.sidebar ul li table#wp-calendar{
-    width: 100%;
-}
-
-#footer{
-    clear: both;
-    float: left;
-    width: 100%;
-    padding: 10px 0 0 0;
-    text-align: center;
-}
-#foot p{
-}   
-
-.comments-template{
-
-	margin: 10px 0 0;
-
-	border-top: 1px solid #ccc;
-
-	padding: 10px 0 0;
-
-}
-
-
-
-.comments-template ol{
-
-	margin: 0;
-
-	padding: 0 0 15px;
-
-	list-style: none;
-
-}
-
-
-
-.comments-template ol li{
-
-	margin: 10px 0 0;
-
-
-	padding: 0 0 10px;
-
-	border-bottom: 1px solid #ccc;
-
-}
-
-
-
-.comments-template h2, .comments-template h3{
-
-	font-family: Georgia, Sans-serif;
-
-	font-size: 16px;
-
-}
-
-
-
-.commentmetadata{
-
-	font-size: 12px;
-
-}
-
-
-
-.comments-template p.nocomments{
-
-	padding: 0;
-
-}
-
-
-
-.comments-template textarea{
-
-	font-family: Arial, Helvetica, Georgia, Sans-serif;
-
-	font-size: 12px;
-
-}
-h3,h4,h5,h6{
-	margin:15px 0 15px 9px;
-	font-family:'Trebuchet MS',微软雅黑,"Microsoft Yahei",Tahoma,Helvetica,Arial,"SimSun",sans-serif;
-	font-weight:normal;
-	padding:2px 0 2px 5px;
-	color:red;
-}
-
-h1{
-	font-size:24px;
-	margin-left:0;
-}
-
-h2{
-	font-size:16px;
-	margin-left:0;
-}
-
-h3{
-	font-size:20px;
-	font-family:微软雅黑;
-	font-weight:700;
-}
-
-h4{
-	font-size:16px;
-	margin-left:20px;
-	font-family:微软雅黑;
-}
-
-h5{
-	font-size:14px;
-}
-
-h6{
-	font-size:12px;
-}
-
-.post1{
-    margin-top: 15px;
-    border: 1px solid #ccc;
-    background: none repeat scroll 0% 0% #FFF;
-    overflow: hidden;
-}
-
-.thumb {
-	float:left;
-}
-.post1 dt {
-	float:left;
-}
-.post1 dt img {
-	float:left;
-	width:180px;
-	height:135px;
-	border:1px solid #d1d1d1;
-	padding:4px;
-}
-.post1 dd {
-	margin-left:140px;
-}
-.post1 dd h2 {
-    margin: 0 10px 0 60px;
-	font-size:20px;
-	padding: 7px 0 7px 0;
-	border-bottom:2px solid #BFBFBF;
-	text-shadow:2px 2px 5px orange,-2px 2px 5px yellow; 
-}
-
-.post1 dd p{
-    margin: 0 10px 0 60px;
-    padding: 5px;
 }
