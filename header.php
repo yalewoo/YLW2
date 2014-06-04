@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title><?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?></title>
+		<title><?php wp_title(' | ', true, 'right'); ?></title>
 		<meta charset="<?php bloginfo('charset'); ?>" />
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
