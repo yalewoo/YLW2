@@ -218,7 +218,12 @@ footer {
 	line-height: 1.5;
 	margin-left: 3%;
 }
-
+.entry ol {
+	list-style: decimal;
+}
+.entry ul {
+	list-style: disc;
+}
 .post h2 {
 	font-size: 30px;
 	font-family: 微软雅黑;
@@ -226,15 +231,15 @@ footer {
 	margin: 10px 0;
 }
 .post h3 {
-	color: #be002f;
-	font-size: 18px;
+	color: #0029FF;
+	font-size: 20px;
 	margin: 10px 0 5px -5px;
 	border-bottom: 1px solid orange;
 }
 .post h4 {
 	font-size: 16px;
-	color: #c93756;
-	margin-left: 10px;
+	color: #FF0B0B;
+	margin: 3px;
 }
 .postmetadata {
     border-top: 1px solid #ccc;
