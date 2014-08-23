@@ -7,6 +7,7 @@
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 				</h2>
 				<div class="entry">
+                    <p id="article_meta">最后更新于：<?php the_modified_time('Y 年 n 月 j 日')?></p>
 					<?php the_content(); ?>
 					<?php link_pages('<p><strong>Pages:</strong>', '</p>', 'number'); ?>
 	                <p class="postmetadata">

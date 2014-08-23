@@ -187,7 +187,15 @@ header ul li:hover ul{
 .rightpost p {
 	line-height: 1.2;
 }
-
+#article_meta {
+    font-size:14px;
+    color: red;
+    text-align: right;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
 
 /*=aside*/
 aside {

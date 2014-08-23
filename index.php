@@ -11,6 +11,7 @@
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 					</h2>
 					<div class="entry-meta">
+	                    <span style="color:#c32136;"><?php the_time('Y 年 n 月 j 日')?></span>
 	                    <?php _e('分类&#58;'); ?> <?php the_category(', ') ?> <?php _e('by'); ?> <?php  the_author(); ?>
 	                    <?php comments_popup_link('快抢沙发 &#187;', '沙发被抢 &#187;', '% 评论 &#187;'); ?> <?php edit_post_link('Edit', ' &#124; ', ''); ?>
 	                     <?php if(function_exists('the_views')) { the_views(); } ?>
