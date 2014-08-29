@@ -22,7 +22,7 @@
 			<h1>yalewoo.com 404!</h1>
 			<iframe scrolling='no' frameborder='0' src='http://yibo.iyiyun.com/Home/Distribute/ad404/key/5413' width='654' height='470' style='display:block;'></iframe>
 		</div>
-
+    <?php get_footer(); ?>
 	</body>
 </html>
     		
