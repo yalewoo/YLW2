@@ -6,300 +6,48 @@ Version: 1.0
 Author: Yalewoo
 Author URI: http://www.yalewoo.com/
 */
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
+	font-family: Tahoma, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
-ol, ul {
+
+/*顶部菜单导航*/
+
+nav#topnav .menu-top-container ul {
 	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 
-body {
-	background: url('img/bg.png') repeat scroll 0% 0% transparent;
+	border : 1px blue solid;
 }
-h1, h2, h3, h4, h5 {
-	font-weight: bold;
-}
-p {
-	text-indent: 2em;
-}
-/*=a*/
-a {
-	color: #336699;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
-
-/*=header*/
-header {
-	margin: 10px;
-	float: left;
-	width: 98%;
+nav#topnav .menu-top-container ul li {
+	display: inline-block;
+	height: 25px;
+	width: 100px;
 	text-align: center;
-}
-header h1 {
-	font-size: 30px;
-	margin-top: 0;
-}
-header hgroup {
-	float: left;
-}
-header div {
-	float: left;
-	height: 28px;
-	margin: 0 auto;
-	margin-top: 20px;
-	border-bottom: 3px solid #e10001;	
-}
 
-header div ul li {
-	float: left;
-	margin-left: 2px;
+	position: relative;
 }
-header div ul li a {
-	color: black;
-	display: block;
-	height: 28px;
-	line-height: 28px;
-	text-align: center;
-	font-size: 14px;
-	width: 87px;
-	background: url('img/nav_bg.gif') 0 -28px no-repeat;
-}
-header div ul li a:hover {
-	background: url('img/nav_bg.gif') 0 -56px no-repeat;
-	color: red;
-}
-
-header ul .current-menu-item a ,header ul .current-menu-item a:hover {
-	background: url('img/nav_bg.gif') 0 0px no-repeat;
-	color: white;
-}
-header ul li ul {
+nav#topnav .menu-top-container ul li ul {
 	display: none;
+}
+nav#topnav .menu-top-container ul li:hover {
+	background: red;
+
+}
+nav#topnav .menu-top-container ul li:hover ul {
+	display: inline;
 	position: absolute;
-	border: 1px solid #ccc;
-}
-header ul li ul li {
-	float: none;
-	width: 87px;
-	background: #eee;
-	margin: 0;
-}
-header ul li ul li a {
-	background: none;
-}
-
-header ul li:hover ul{
-	display: block;
-}
-
-/*=container*/
-#container {
-	margin-left: 2%;
-	float: left;
-	width: 64%;
-}
-.post1 {
-	background: none repeat scroll 0% 0% #fff;
-	border: 1px solid #ccc;
-	overflow: hidden;
-	padding: 5px;
-	margin-bottom: 15px;
-}
-.entry-thumb {
-	border: 1px solid #d1d1d1;
-	padding: 4px;
-	float: left;
-	height: 154px;
-}
-.entry-thumb img {
-	width: 180px;
-	height: 150px;
-}
-.entry-content a {
-	display: block;
-	float: right;
-}
-.rightpost {
-	margin-left: 200px;
-}
-.rightpost h2 {
-	margin-left: 5px;
-	padding-bottom: 5px;
-	margin-bottom: 10px;
-	font-size:20px;	
-	border-bottom:2px solid #BFBFBF;
-	text-shadow:2px 2px 5px orange,-2px 2px 5px yellow; 
-}
-.rightpost h2 a:hover {
-	color: red;
-}
-.entry-meta {
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 25px;
-	margin-bottom: 10px;
-}
-.rightpost p {
-	line-height: 1.2;
-}
-#article_meta {
-    font-size:14px;
-    color: red;
-    text-align: right;
-    border-bottom: 1px solid gray;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-weight: bold;
-}
-
-/*=aside*/
-aside {
-	padding: 0 0 0 10px;
-	float: right;
-	width: 29%;
-	background: white;
-	margin-right: 2%;
-}
-aside li h2 {
-	font-size: 18px;
-	margin: 5px;
-	color: #ff461f;
-}
-aside li {
-	line-height: 1.2;
-	margin-left: 3px;
-}
-
-/*=footer*/
-footer {
-	clear: both;
+	top: 25px;
+	left: 0px;
+	border: 1px red solid;
+	height: 30px;
 	text-align: center;
-}
+	margin: 0px;
+	padding: 0px;
 
-/*=single*/
-.entry {
-	line-height: 1.5;
-	margin-left: 3%;
 }
-.entry ol {
-	list-style: decimal;
+nav#topnav .menu-top-container ul li:hover ul li {
+	background-color: #333;
 }
-.entry ul {
-	list-style: disc;
-}
-.post h2 {
-	font-size: 30px;
-	font-family: 微软雅黑;
-	text-align: center;
-	margin: 10px 0;
-}
-.post h3 {
-	color: #0029FF;
-	font-size: 20px;
-	margin: 10px 0 5px -5px;
-	border-bottom: 1px solid orange;
-}
-.post h4 {
-	font-size: 16px;
-	color: #FF0B0B;
-	margin: 3px;
-}
-.postmetadata {
-    border-top: 1px solid #ccc;
-    margin: 10px 0 0 0;
-}
-.postcopyright {
-	border-bottom: 1px solid #ccc;
-}
-.strong {
-	font-weight: bold;
-}
-.navigation{
-    padding: 10px 0 0 0;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-
-
-
-
-/*小屏幕适配*/
-@media screen and (max-width: 1015px) {
-	#container {
-		margin-top: 20px;
-	}
-	aside {
-		margin-top: 20px;
-	}
-}
-@media screen and (max-width: 800px) {
-	.entry-thumb {
-		border: 0px;
-		float: none;
-		text-align: center;
-	}
-	.rightpost {
-		margin-left: 0px;
-	}
-}
-@media screen and (max-width: 561px) {
-	#container {
-		margin-top: 50px;
-		width: 100%;
-	}
-	aside {
-
-		width: 100%;
-	}
-}
-@media screen and (max-width: 380px) {
-	#container {
-		margin-top: 80px;
-	}
+nav#topnav .menu-top-container ul li ul li:hover {
+	background: red;
 }
