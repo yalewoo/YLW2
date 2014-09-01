@@ -264,3 +264,42 @@ footer {
     font-size: 14px;
     font-weight: bold;
 }
+
+
+
+
+
+/*小屏幕适配*/
+@media screen and (max-width: 1015px) {
+	#container {
+		margin-top: 20px;
+	}
+	aside {
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.entry-thumb {
+		border: 0px;
+		float: none;
+		text-align: center;
+	}
+	.rightpost {
+		margin-left: 0px;
+	}
+}
+@media screen and (max-width: 561px) {
+	#container {
+		margin-top: 50px;
+		width: 100%;
+	}
+	aside {
+
+		width: 100%;
+	}
+}
+@media screen and (max-width: 380px) {
+	#container {
+		margin-top: 80px;
+	}
+}
