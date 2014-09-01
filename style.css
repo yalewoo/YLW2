@@ -11,12 +11,9 @@ body {
 }
 
 /*顶部菜单导航*/
-
 nav#topnav .menu-top-container ul {
 	list-style: none;
 
-
-	border : 1px blue solid;
 }
 nav#topnav .menu-top-container ul li {
 	display: inline-block;
@@ -38,8 +35,7 @@ nav#topnav .menu-top-container ul li:hover ul {
 	position: absolute;
 	top: 25px;
 	left: 0px;
-	border: 1px red solid;
-	height: 30px;
+
 	text-align: center;
 	margin: 0px;
 	padding: 0px;
