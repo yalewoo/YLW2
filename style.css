@@ -1,8 +1,8 @@
 /*  
 Theme Name: yale
 Theme URI: http://www.yalewoo.com
-Description: This is my theme as a new test.
-Version: 1.0
+Description: new updata in 9.1
+Version: 1.1
 Author: Yalewoo
 Author URI: http://www.yalewoo.com/
 */
@@ -10,15 +10,18 @@ body {
 	font-family: Tahoma, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
-/*顶部菜单导航*/
+/*=nav*/
 nav#topnav .menu-top-container ul {
 	list-style: none;
-
+	border: 1px solid red;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
 }
 nav#topnav .menu-top-container ul li {
 	display: inline-block;
 	height: 25px;
-	width: 100px;
+	width: 80px;
 	text-align: center;
 
 	position: relative;
@@ -46,4 +49,65 @@ nav#topnav .menu-top-container ul li:hover ul li {
 }
 nav#topnav .menu-top-container ul li ul li:hover {
 	background: red;
+}
+
+/*=container*/
+#container {
+	width: 960px;
+	border: 1px solid yellow;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*=blog*/
+#blog {
+	width: 670px;
+	float: left;
+	border: 1px solid red;
+
+}
+#blog .post-thumb img {
+	width: 200px;
+	height: 150px;
+	float: left;
+	border: thin gray solid;
+	padding: 5px;
+	margin: 5px;
+}
+/*=article*/
+article.post .post-content {
+	margin-left: 240px;
+	height: 162px;
+}
+article.post .post-content p {
+	text-indent: 2em;
+	line-height: 1.5;
+}
+
+article.post {
+	display: block;
+	position: relative;
+	border-bottom: 1px solid #333333;
+}
+article.post > a {
+	float: right;
+	position: absolute;
+	bottom: 5px;
+	right: 0px;
+}
+/*article.post * {
+	border: 1px solid red;
+}*/
+
+/*=sidebar*/
+#sidebar {
+	width: 200px;
+	float: right;
+	border: 1px solid blue;
+}
+
+/*=footer*/
+#footer {
+	clear: both;
 }
