@@ -6,34 +6,61 @@ Version: 1.1
 Author: Yalewoo
 Author URI: http://www.yalewoo.com/
 */
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
 	font-family: Tahoma, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+	background-image: url('img/bg.png');
 }
-
+a {
+	text-decoration: none;
+}
+/*=header*/
+#topheader {
+	background-color: #fff;
+	margin: 0;
+}
 /*=nav*/
-nav#topnav .menu-top-container ul {
+.menu-top-container > ul {
+
 	list-style: none;
-	border: 1px solid red;
 	text-align: center;
 	margin: 0px;
 	padding: 0px;
+	margin-bottom: 25px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	letter-spacing: -2px;/*根据不同字体字号或许需要做一定的调整*/
+  	word-spacing: -2px;
+  	font-size: 0;
 }
-nav#topnav .menu-top-container ul li {
+.menu-top-container li {
 	display: inline-block;
 	height: 25px;
 	width: 80px;
 	text-align: center;
-
+	z-index: 1;
 	position: relative;
+	/*取消inline block之间的空白*/
+	font-size: 16px;
+  	letter-spacing: normal;
+  	word-spacing: normal;
+  	display:inline-block;
+  	*display: inline;
+  	zoom:1;
 }
-nav#topnav .menu-top-container ul li ul {
+.menu-top-container li a {
+	display: block;
+}
+.menu-top-container li ul {
 	display: none;
 }
-nav#topnav .menu-top-container ul li:hover {
+.menu-top-container li:hover {
 	background: red;
 
 }
-nav#topnav .menu-top-container ul li:hover ul {
+.menu-top-container li:hover ul {
 	display: inline;
 	position: absolute;
 	top: 25px;
@@ -44,19 +71,21 @@ nav#topnav .menu-top-container ul li:hover ul {
 	padding: 0px;
 
 }
-nav#topnav .menu-top-container ul li:hover ul li {
+.menu-top-container li:hover li {
 	background-color: #333;
 }
-nav#topnav .menu-top-container ul li ul li:hover {
+.menu-top-container li li:hover {
 	background: red;
 }
 
 /*=container*/
 #container {
+	overflow: hidden;
 	width: 960px;
-	border: 1px solid yellow;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #fff;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -64,8 +93,12 @@ nav#topnav .menu-top-container ul li ul li:hover {
 #blog {
 	width: 670px;
 	float: left;
-	border: 1px solid red;
-
+	margin: 10px;
+	border-right: 1px solid #dadada;
+	padding-right: 10px;
+}
+#blog h2 {
+	clear: both;
 }
 #blog .post-thumb img {
 	width: 200px;
@@ -75,39 +108,67 @@ nav#topnav .menu-top-container ul li ul li:hover {
 	padding: 5px;
 	margin: 5px;
 }
+
 /*=article*/
-article.post .post-content {
+.post h2 {
+	text-align: center;
+	font-size: 1.3em;
+	margin: 5px;
+	margin-bottom: 10px;
+
+}
+.post h2 a {
+	color: #222;
+
+}
+.post .post-content {
 	margin-left: 240px;
 	height: 162px;
 }
-article.post .post-content p {
+.post .post-content p {
 	text-indent: 2em;
-	line-height: 1.5;
+	line-height: 1.7;
+	color: #111111;
 }
 
-article.post {
+.post {
 	display: block;
 	position: relative;
-	border-bottom: 1px solid #333333;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dddddd;
 }
-article.post > a {
+.post > a {
 	float: right;
 	position: absolute;
 	bottom: 5px;
 	right: 0px;
 }
+.post .post-meta {
+
+	margin: 5px;
+	font-size: 14px;
+	font-family: 宋体;
+	font-weight: bold;
+	color: #444;
+}
 /*article.post * {
 	border: 1px solid red;
 }*/
-
+.article_nav {
+	text-align: center;
+}
 /*=sidebar*/
 #sidebar {
-	width: 200px;
-	float: right;
-	border: 1px solid blue;
+	width: 246px;
+	float: left;
+	margin: 5px;
+}
+#sidebar ul {
+	list-style: none;
 }
 
 /*=footer*/
 #footer {
 	clear: both;
+	text-align: center;
 }
