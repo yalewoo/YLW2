@@ -10,8 +10,9 @@ remove_action('wp_head', 'adjacent_posts_rel_link');
 //添加自定义菜单
 if(function_exists('register_nav_menus')){
     register_nav_menus( array(
-	'header_menu' => 'My Custom Header Menu',
-	'footer_menu' => 'My Custom Footer Menu'
+	'main_menu' => '主体导航栏',
+	'top_menu' => '最顶端菜单',
+	'footer_menu' => '页脚菜单'
 ) );
 }
 //添加侧边栏
