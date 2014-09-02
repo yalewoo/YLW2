@@ -272,7 +272,7 @@ a:hover {
 #article-content {
 	margin-top: 20px;
 	text-indent: 2em;
-	line-height: 1.5em;
+	line-height: 1.5;
 	color: #111;
 }
 #entry h3 {
