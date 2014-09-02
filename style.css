@@ -1,7 +1,7 @@
 /*  
 Theme Name: yale
 Theme URI: http://www.yalewoo.com
-Description: new updata in 9.1
+Description: 9.2号更新雅乐网主题
 Version: 1.1
 Author: Yalewoo
 Author URI: http://www.yalewoo.com/
@@ -16,8 +16,24 @@ body {
 }
 a {
 	text-decoration: none;
+	color: #336699;
+}
+a:hover {
+	text-decoration: underline;
 }
 /*=header*/
+#top_menu {
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+#top_menu ul {
+	list-style: none;
+}
+#top_menu ul li, #footer_menu ul li {
+	display: inline-block;
+	margin-left: 10px;
+}
 #topheader {
 	background-color: #fff;
 	margin: 0;
@@ -67,12 +83,12 @@ a {
 	left: 0px;
 
 	text-align: center;
-	margin: 0px;
-	padding: 0px;
 
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+	border: 1px solid #ddd;
 }
 .menu-top-container li:hover li {
-	background-color: #333;
+	background-color: #d1d1d1;
 }
 .menu-top-container li li:hover {
 	background: red;
@@ -87,6 +103,7 @@ a {
 	background-color: #fff;
 	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 
 /*=blog*/
@@ -112,23 +129,29 @@ a {
 /*=article*/
 .post h2 {
 	text-align: center;
+	font-weight: normal;
 	font-size: 1.3em;
-	margin: 5px;
+	margin: 10px 5px 5px 5px;
 	margin-bottom: 10px;
 
 }
 .post h2 a {
-	color: #222;
-
+	color: #333;
+}
+#container .post h2 a:hover {
+	color: #5895BE;
+	text-decoration: none;
 }
 .post .post-content {
 	margin-left: 240px;
 	height: 162px;
 }
 .post .post-content p {
+	font-size: 14px;
 	text-indent: 2em;
 	line-height: 1.7;
-	color: #111111;
+	color: #222;
+	padding-top: 10px;
 }
 
 .post {
@@ -145,12 +168,18 @@ a {
 }
 .post .post-meta {
 
+	text-align: center;
 	margin: 5px;
 	font-size: 14px;
-	font-family: 宋体;
+	font-family: serif;
 	font-weight: bold;
-	color: #444;
+	color: #c32136;
 }
+.post .post-meta a {
+	font-weight: normal;
+
+}
+
 /*article.post * {
 	border: 1px solid red;
 }*/
@@ -159,16 +188,200 @@ a {
 }
 /*=sidebar*/
 #sidebar {
-	width: 246px;
+	width: 236px;
 	float: left;
-	margin: 5px;
+	margin: 10px;
+	font-size: 14px;
 }
 #sidebar ul {
 	list-style: none;
 }
+#sidebar h2 {
+	font-family: 微软雅黑;
+	font-size: 16px;
+	line-height: 30px;
+	color: black;
+	font-weight: bold;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+	padding: 5px 5px 5px 0px;
+}
+#sidebar ul li {
+	margin: 5px;
+}
+#sidebar .widget_categories ul li li {
+	text-indent: 1em;
+}
+
+
 
 /*=footer*/
 #footer {
 	clear: both;
 	text-align: center;
+	margin-top: 20px;
+	background-color: #DAE2EE;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+
+}
+/*=single*/
+
+/*=mbxdh*/
+.mbxdh {
+	width: 960px;
+	margin: 10px auto;
+	background-color: #a4e2c6;
+	font-weight: normal;
+	font-family: serif;
+	color: #c32136;
+}
+.mbxdh a {
+	display: inline-block;
+	padding: 5px;
+	color: blue;
+}
+.mbxdh a:hover {
+	text-decoration: underline;
+}
+.mbxdh span {
+	color: black;
+	font-weight: bold;
+}
+/*=whole_article*/
+.whole_article {
+	margin: 10px 50px;
+}
+.whole_article img {
+	max-width: 100%;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+#entry h2 {
+	margin: 20px;
+}
+#entry h2 a {
+	color: black;
+}
+#entry .post-meta, #entry .post-meta a {
+	color: #aaa;
+	text-indent: 2em;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+#article-content {
+	margin-top: 20px;
+	text-indent: 2em;
+	line-height: 1.5em;
+	color: #111;
+}
+#entry h3 {
+	text-indent: 0;
+	font-family: serif;
+	font-size: 29px;
+	font-weight: 900;
+	word-spacing: 2px;
+	margin: 30px 0 30px -30px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #eee;
+	color: #00bc12;
+
+}
+#entry h4 {
+	text-indent: 0;
+	color: #ff7500;
+	margin: 10px 0 10px 0;
+
+	padding-left: 10px;
+	border-left: 5px solid red;
+	border-bottom: 1px solid #faff72;
+}
+
+#otherdata div.article-copyright {
+	border: 1px solid #ddd;
+	padding: 15px;
+	margin: 20px 0;
+	background: #F9F9F9;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	_zoom: 1;
+}
+#otherdata .article_links {
+	padding: 10px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+/*针对小屏幕响应式布局*/
+@media screen and (max-width: 978px) {
+	#sidebar {
+		display: none;
+	}
+	#container {
+		width: 690px;
+	}
+	#blog {
+		margin: 10px;
+		border-right: 0px;
+		padding-right: 0px;
+	}
+}
+@media screen and (max-width: 708px) {
+	#top_menu {
+		position: static;
+		text-align: right;
+	}
+	#sidebar {
+		display: none;
+	}
+	#container {
+		width: 460px;
+	}
+	#blog {
+		width: 440px;
+		margin: 10px;
+		border-right: 0px;
+		padding-right: 0px;
+	}
+	#blog .post-thumb {
+		text-align: center;
+	}
+	#blog .post-thumb img {
+		float: none;
+	}
+	#blog .post-content {
+		margin: 5px; 
+		height: auto;
+	}
+}
+@media screen and (max-width: 480px) {
+	#top_menu {
+		position: static;
+		text-align: right;
+	}
+	#sidebar {
+		display: none;
+	}
+	#container {
+		width: 294px;
+	}
+	#blog {
+		width: 274px;
+		margin: 10px;
+		border-right: 0px;
+		padding-right: 0px;
+	}
+	#blog .post-thumb {
+		text-align: center;
+	}
+	#blog .post-thumb img {
+		float: none;
+	}
+	#blog .post-content {
+		height: auto;
+	}
+	#blog .post-content {
+		margin: 5px; 
+	}
 }

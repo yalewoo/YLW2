@@ -1,16 +1,29 @@
 		<?php get_header(); ?>
-
+		<div class="mbxdh">
+				<span>当前位置</span>：<a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> &raquo;
+				<?php
+				$categorys = get_the_category();
+				$category = $categorys[0];
+				echo( get_category_parents($category->term_id,true,' &raquo; ') );
+				the_title();
+				?>
+		</div>
 		<div id="container">
+			
     		<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
-			<section class="article" id="article-<?php the_ID(); ?>">
+			<section class="whole_article" id="article-<?php the_ID(); ?>">
 				<article id="entry">
 					<h2 id="article-title">
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 					</h2>
 					
-	                <p id="article_meta">
-	                	分类: <?php the_category(', ') ?> \ 最后更新于：<?php the_modified_time('Y 年 n 月 j 日')?>
-	                </p>
+	                <div class="post-meta">
+	                    最近更新：<?php the_modified_time('Y年n月j日')?>
+
+	                    <?php _e('分类&#58;'); ?> <?php the_category(', ') ?> <?php _e('by'); ?> <?php  the_author(); ?>
+	                    <?php comments_popup_link('快抢沙发 &#187;', '沙发被抢 &#187;', '% 评论 &#187;'); ?> <?php edit_post_link('Edit', ' &#124; ', ''); ?>
+	                     <?php if(function_exists('the_views')) { the_views(); } ?>
+					</div>
 
 	                <div id="article-content">
 						<?php the_content(); ?>
@@ -34,8 +47,9 @@
 	    			</div>
 	    			<?php endif; ?>
 
-	    			<div class="navigation">
-	            		<?php previous_post_link('%link') ?> || <?php next_post_link('%link') ?>
+	    			<div class="article_links">
+	            		<span>上一篇 &gt;：</span><?php previous_post_link('%link') ?><br>
+	            		<span>下一篇 &gt;：</span><?php next_post_link('%link') ?>
 	        		</div>
 
 	    			<div class="comments-template">
@@ -48,7 +62,7 @@
 
 				
        			<?php else : ?>
-        		<section class="article">
+        		<section class="whole_article">
             		<h2><?php _e("Not Found"); ?></h2>
         		</section>
 
@@ -58,7 +72,7 @@
 			
 		
 
-    		<?php get_sidebar(); ?>
+    		<?//php get_sidebar(); ?>
     	</div>
     	<?php get_footer(); ?>
 	</body>
