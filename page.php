@@ -1,5 +1,5 @@
 		<?php get_header(); ?>
-		<div class="mbxdh">
+		<div id="mbxdh">
 			当前位置：<a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> &raquo;
 			<?php the_title();?>
 		</div>
