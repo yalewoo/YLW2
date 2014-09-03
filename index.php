@@ -6,7 +6,7 @@
 	    		<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 				<article class="post" id="post-<?php the_ID(); ?>">
 					
-					<h2 id="post-title">
+					<h2 id="post-title" onclick="this.innerHTML='正在拼命加载中...'">
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 					</h2>
 					<div class="post-meta">
