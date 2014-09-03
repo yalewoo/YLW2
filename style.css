@@ -227,7 +227,7 @@ a:hover {
 /*=single*/
 
 /*=mbxdh*/
-.mbxdh {
+#mbxdh {
 	width: 960px;
 	margin: 10px auto;
 	background-color: #a4e2c6;
@@ -235,15 +235,15 @@ a:hover {
 	font-family: serif;
 	color: #c32136;
 }
-.mbxdh a {
+#mbxdh a {
 	display: inline-block;
 	padding: 5px;
 	color: blue;
 }
-.mbxdh a:hover {
+#mbxdh a:hover {
 	text-decoration: underline;
 }
-.mbxdh span {
+#mbxdh span {
 	color: black;
 	font-weight: bold;
 }
@@ -251,9 +251,11 @@ a:hover {
 .whole_article {
 	margin: 10px 50px;
 }
-.whole_article img {
-	max-width: 100%;
-	margin: 10px;
+#entry img {
+
+	max-width: 90%;
+	height: auto;
+	margin: 10px auto;
 	padding: 10px;
 	border: 1px solid #ddd;
 }
@@ -269,7 +271,7 @@ a:hover {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #eee;
 }
-#article-content {
+#article-content p {
 	margin-top: 20px;
 	text-indent: 2em;
 	line-height: 1.5;
@@ -326,6 +328,9 @@ a:hover {
 		border-right: 0px;
 		padding-right: 0px;
 	}
+	#mbxdh {
+		width: 690px;
+	}
 }
 @media screen and (max-width: 708px) {
 	#top_menu {
@@ -353,6 +358,9 @@ a:hover {
 	#blog .post-content {
 		margin: 5px; 
 		height: auto;
+	}
+	#mbxdh {
+		width: 460px;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -383,5 +391,8 @@ a:hover {
 	}
 	#blog .post-content {
 		margin: 5px; 
+	}
+	#mbxdh {
+		width: 294px;
 	}
 }
