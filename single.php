@@ -1,5 +1,5 @@
 		<?php get_header(); ?>
-		<div class="mbxdh">
+		<div id="mbxdh">
 				<span>当前位置</span>：<a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> &raquo;
 				<?php
 				$categorys = get_the_category();
