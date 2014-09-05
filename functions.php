@@ -31,8 +31,8 @@ add_filter('excerpt_length', 'new_excerpt_length');
 function catch_first_image() {global $post, $posts;$first_img = '';
 
 	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
-	$first_img = $matches [1] [0];
-	if(empty($first_img)){
+	$first_img = $matches [1] [0].'-indexthumb';
+	if($first_img == '-indexthumb'){
 		$first_img = bloginfo('template_directory').'/img/default.png';
 		return $first_img;
 	}
