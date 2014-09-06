@@ -229,8 +229,10 @@ a:hover {
 /*=mbxdh*/
 #mbxdh {
 	width: 960px;
-	margin: 10px auto;
-	background-color: #a4e2c6;
+	margin: 10px auto 0px auto;
+	border-bottom: 2px solid #ddd;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+	background-color: #fff;
 	font-weight: normal;
 	font-family: serif;
 	color: #c32136;
