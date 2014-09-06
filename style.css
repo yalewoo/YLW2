@@ -39,7 +39,7 @@ a:hover {
 	margin: 0;
 }
 /*=nav*/
-.menu-top-container > ul {
+#topheader + nav > div > ul {
 
 	list-style: none;
 	text-align: center;
@@ -51,7 +51,7 @@ a:hover {
   	word-spacing: -2px;
   	font-size: 0;
 }
-.menu-top-container li {
+#topheader + nav > div li {
 	display: inline-block;
 	height: 25px;
 	width: 80px;
@@ -66,17 +66,17 @@ a:hover {
   	*display: inline;
   	zoom:1;
 }
-.menu-top-container li a {
+#topheader + nav > div li a {
 	display: block;
 }
-.menu-top-container li ul {
+#topheader + nav > div li ul {
 	display: none;
 }
-.menu-top-container li:hover {
+#topheader + nav > div li:hover {
 	background: red;
 
 }
-.menu-top-container li:hover ul {
+#topheader + nav > div li:hover ul {
 	display: inline;
 	position: absolute;
 	top: 25px;
@@ -87,10 +87,10 @@ a:hover {
 	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 	border: 1px solid #ddd;
 }
-.menu-top-container li:hover li {
+#topheader + nav > div li:hover li {
 	background-color: #d1d1d1;
 }
-.menu-top-container li li:hover {
+#topheader + nav > div li li:hover {
 	background: red;
 }
 
