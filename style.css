@@ -73,7 +73,7 @@ a:hover {
 	display: none;
 }
 #topheader + nav > div li:hover {
-	background: red;
+	background: #41B4B0;
 
 }
 #topheader + nav > div li:hover ul {
@@ -91,7 +91,7 @@ a:hover {
 	background-color: #d1d1d1;
 }
 #topheader + nav > div li li:hover {
-	background: red;
+	background: #41B4B0;
 }
 
 /*=container*/
