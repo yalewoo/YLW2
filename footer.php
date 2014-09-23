@@ -5,8 +5,10 @@
       	<?php wp_nav_menu( array( 'theme_location' => 'footer_menu' )); ?>
       </div>
       <div id="cnzztongji">
-      	下面是统计代码
-		<script language="javascript" type="text/javascript" src="http://js.users.51.la/11118847.js"></script>
-<noscript><a href="http://www.51.la/?11118847" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/11118847.asp" style="border:none" /></a></noscript>
-		统计代码结束</div>
+      	
+
+		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1252889774'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/stat.php%3Fid%3D1252889774%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+		</div>
 </footer>
