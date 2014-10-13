@@ -225,7 +225,18 @@ a:hover {
 
 }
 /*=single*/
-
+#article-content blockquote {
+	background: #f9f9f9 url(img/icon_quote_right.png) no-repeat right bottom;
+	padding: 5px;	
+}
+#article-content blockquote p:first-child{
+	background: #F9F9F9 url(img/icon_quote_left.gif) no-repeat;
+	
+}
+#article-content blockquote p {
+	text-indent: 4em;
+	margin: 30px;
+}
 /*=mbxdh*/
 #mbxdh {
 	width: 960px;
